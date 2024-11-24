@@ -1,0 +1,33 @@
+.call-to-action {
+    background-color: #004aad;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+  
+    .cta-content {
+      max-width: 600px;
+      margin: 0 auto;
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+      }
+  
+      .cta-button {
+        background-color: #ffcc00;
+        color: #004aad;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+    }
+  }
+  

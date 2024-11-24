@@ -1,0 +1,98 @@
+.why-change {
+    padding: 3rem 1.5rem;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      gap: 2rem;
+  
+      .text-section {
+        flex: 1 1 50%;
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+          color: #004aad;
+  
+          span {
+            border-bottom: 3px solid #00a63f;
+          }
+        }
+  
+        p {
+          font-size: 1rem;
+          line-height: 1.8;
+          color: #555;
+        }
+      }
+  
+      .info-section {
+        flex: 1 1 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+  
+        .progress-bars {
+          .progress-item {
+            margin-bottom: 1rem;
+  
+            label {
+              font-size: 1rem;
+              color: #004aad;
+              display: block;
+              margin-bottom: 0.5rem;
+            }
+  
+            .progress {
+              height: 10px;
+              background: #ddd;
+              border-radius: 5px;
+              overflow: hidden;
+              position: relative;
+  
+              .progress-fill {
+                height: 100%;
+                background: #00a63f;
+                animation: grow 1.5s ease-in-out forwards;
+              }
+            }
+          }
+        }
+  
+        .map-section {
+          text-align: center;
+  
+          img {
+            max-width: 100px;
+            margin-bottom: 1rem;
+          }
+  
+          p {
+            font-size: 1rem;
+            color: #00a63f;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  
+    @keyframes grow {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+    }
+  }
+  
