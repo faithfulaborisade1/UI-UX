@@ -1,30 +1,32 @@
-/* General Container Styles */
+/* Background Container */
 .auth-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #121212; /* Dark background */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(45deg, #ff7eb3, #65e2d9);
-    background-size: 200% 200%;
-    animation: gradientShift 15s ease infinite;
+    overflow: hidden;
   }
   
   /* Glass Effect */
   .glass-effect {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 2rem;
     border-radius: 1rem;
     width: 350px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .glass-effect:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  /* Form Title */
+  .title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
   }
   
   /* Form Inputs */
@@ -37,53 +39,17 @@
     background: rgba(255, 255, 255, 0.15);
     color: white;
     outline: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .input-3d:focus {
-    transform: translateZ(5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Buttons */
+  /* Submit Button */
   .button-3d {
     width: 100%;
-    margin: 1rem 0;
     padding: 0.8rem;
     background: #7a5af8;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .button-3d:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Social Buttons */
-  .social-buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-  
-  .social-button {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    color: white;
-    padding: 0.8rem;
-    text-align: center;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .social-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   
   /* Toggle Text */
@@ -94,7 +60,7 @@
   }
   
   .toggle-link {
-    color: #ff7eb3;
+    color: #ff69b4;
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
@@ -102,12 +68,5 @@
   
   .toggle-link:hover {
     text-decoration: none;
-  }
-  
-  /* Background Animation */
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
   }
   

@@ -1,4 +1,5 @@
 import React from "react";
+import BackgroundScene from "./BackgroundScene";
 import "./Login.css";
 
 const Login = () => {
@@ -9,7 +10,8 @@ const Login = () => {
 
   return (
     <div className="auth-container">
-      <div className="glass-effect form-fade-in">
+      <BackgroundScene />
+      <div className="glass-effect">
         <h2 className="title">Welcome Back</h2>
         <form onSubmit={handleSubmit}>
           <input
@@ -28,14 +30,6 @@ const Login = () => {
             Sign In
           </button>
         </form>
-        <div className="social-buttons">
-          <button className="social-button button-3d">
-            <span>Google</span>
-          </button>
-          <button className="social-button button-3d">
-            <span>GitHub</span>
-          </button>
-        </div>
         <p className="toggle-text">
           Don’t have an account?{" "}
           <a href="/signup" className="toggle-link">
